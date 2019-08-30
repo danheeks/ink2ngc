@@ -230,9 +230,10 @@ class SvgParser:
       return float( default )
 
   def parse(self):
-    self.svgWidth = self.getLength('width', 354)
+#    self.svgWidth = self.getLength('width', 354)
     self.svgHeight = self.getLength('height', 354)
-    self.recursivelyTraverseSvg(self.svg, [[1.0, 0.0, -(self.svgWidth/2.0)], [0.0, -1.0, (self.svgHeight/2.0)]])
+#    self.recursivelyTraverseSvg(self.svg, [[1.0, 0.0, -(self.svgWidth/2.0)], [0.0, -1.0, (self.svgHeight/2.0)]])
+    self.recursivelyTraverseSvg(self.svg, [[1.0, 0.0, 0.0], [0.0, -1.0, self.svgHeight]])
 
   # TODO: center this thing
   def recursivelyTraverseSvg(self, nodeList, 
