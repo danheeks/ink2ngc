@@ -1,5 +1,7 @@
 # ink2ngc
-Inkscape extension to save .ngc file for milling machine
+Inkscape extension to save .ngc file for milling machine.
+
+GPL license.
 
 This was hacked from a "unicorn" inkscape extension which made g-code for a 3d printer.
 
