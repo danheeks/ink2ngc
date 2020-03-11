@@ -85,7 +85,7 @@ class SvgPath(entities.PolyLine):
     self.segments = []
     for sp in p:
       points = []
-      subdivideCubicPath(sp,0.2)  # TODO: smoothness preference
+      subdivideCubicPath(sp,0.02)  # TODO: smoothness preference
       for csp in sp:
         points.append((csp[1][0],csp[1][1]))
       self.segments.append(points)

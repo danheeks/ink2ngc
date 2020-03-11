@@ -12,8 +12,9 @@ class GCodeContext:
       self.preamble = [
         "(G-Code for bCNC software)",
         "G21 (metric ftw)",
-        "G90 (absolute mode)"
-        "S10000 M3 ( spindle on )"
+        "G90 (absolute mode)",
+        "S10000 M3 ( spindle on )",
+        "G04 P1 ( 1 second delay to let spindle get up to speed )"
       ]
 
       self.postscript = [
